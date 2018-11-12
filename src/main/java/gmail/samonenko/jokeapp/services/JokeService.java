@@ -1,13 +1,7 @@
 package gmail.samonenko.jokeapp.services;
 
-import guru.springframework.norris.chuck.ChuckNorrisQuotes;
-import org.springframework.stereotype.Service;
+public interface JokeService {
 
-@Service
-public class JokeService {
-
-    public String getChuckNorrisJoke() {
-        return (new ChuckNorrisQuotes()).getRandomQuote();
-    }
+    String getJoke();
 
 }
